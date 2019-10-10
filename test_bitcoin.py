@@ -6,6 +6,7 @@ import Bitcoin
 
 class testBitcoin(TestCase):
 
+    # Test if result with the mock_rate is correct
     @patch('Bitcoin.get_API_rate_data')
     def test_value_to_USD(self, mock_rates):
         mock_rate = 123456
